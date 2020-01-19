@@ -1,5 +1,9 @@
 package pl.edu.agh.java.exercises.arrays;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Consider the leftmost and righmost appearances of some value in an array.
  * We'll say that the "span" is the number of elements between the two
@@ -14,7 +18,19 @@ package pl.edu.agh.java.exercises.arrays;
  * @see http://codingbat.com/prob/p189576
  */
 public class ArraySpan {
+	
+	private Map<Integer, ArrayList<Integer>> valuesMap = new HashMap<Integer, ArrayList<Integer>>();
+	
 	public int maxSpan(int[] array) {
+	
 		throw new UnsupportedOperationException();
+	}
+	
+	public void createMap(int[] array) {
+		
+		for (int i = 0; i< array.length; i++) {
+			
+		}
+		
 	}
 }
