@@ -29,8 +29,13 @@ public class ArraySpan {
 	public void createMap(int[] array) {
 		
 		for (int i = 0; i< array.length; i++) {
-			
+			if (!valuesMap.containsKey(array[i])) {
+				valuesMap.put(array[i], new ArrayList<Integer>(i)); 
+			} else {
+				ArrayList<Integer> temp = valuesMap.get(array[i]);
+				temp.add(i);
+				valuesMap.put(array[i], temp);
+			}
 		}
-		
 	}
 }
